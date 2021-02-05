@@ -1,12 +1,7 @@
 package com.minikube.sample.rest.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.minikube.sample.properties.PropertiesConfig;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Lookup;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,12 +29,35 @@ public class HomeResource {
         return new ResponseEntity<>(responseData, HttpStatus.OK);
     }
 
-    @Getter
-    @Setter
     public class ResponseData {
         private String name;
         private Integer id;
         private String place;
         private String value;
+        
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public Integer getId() {
+			return id;
+		}
+		public void setId(Integer id) {
+			this.id = id;
+		}
+		public String getPlace() {
+			return place;
+		}
+		public void setPlace(String place) {
+			this.place = place;
+		}
+		public String getValue() {
+			return value;
+		}
+		public void setValue(String value) {
+			this.value = value;
+		}
     }
 }
