@@ -5,7 +5,5 @@ metadata:
   namespace: test
 data:
   app.data.name: name
-  application.yml: |-
-    app:
-      data:
-        test: test
+  application.properties: |
+    app.data.test = test
