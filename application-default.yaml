@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-demo
+  namespace: test
+data:
+  app.data.name: name
+  application.yml: |-
+    app:
+      data:
+        test: test
