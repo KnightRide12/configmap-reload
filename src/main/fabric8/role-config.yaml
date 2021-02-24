@@ -27,7 +27,7 @@ roleRef:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: configmap-demo-view
+  name: demo-config-view
 roleRef:
   kind: ClusterRole
   name: view
@@ -36,4 +36,4 @@ subjects:
   # Authorize specific service accounts:
   - kind: ServiceAccount
     name: default
-    namespace: test
+    namespace: amq
