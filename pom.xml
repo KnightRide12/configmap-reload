@@ -12,14 +12,14 @@
     <artifactId>kubernetes-configmap-reload</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>configmap-demo</name>
+    <name>demo-config</name>
     <description>Demo project for Spring Cloud Kubernetes</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <version.fuse>2.21.0.fuse-730078-redhat-00001</version.fuse>
+        <version.fuse>2.23.2</version.fuse>
     </properties>
 
     <dependencies>
