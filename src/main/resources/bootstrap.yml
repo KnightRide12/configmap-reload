@@ -4,8 +4,8 @@ spring:
       config:
         enabled: true
         sources:
-          - namespace: test
-            name: configmap-demo
+          - namespace: amq
+            name: demo-config
       reload:
         enabled: true
         mode: event
